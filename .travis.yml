@@ -8,6 +8,8 @@ before_install:
 script:
   - docker run zsheill/docker-react npm run test -- --coverage
 
+language: generic
+
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
